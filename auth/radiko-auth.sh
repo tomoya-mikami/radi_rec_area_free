@@ -22,6 +22,6 @@ KEY_OFF_SET=$($AUTH_EXEC_P/parse-header.sh "$RES1" X-Radiko-KeyOffset)
 PARTICAL_KEY=`dd if=$AUTH_EXEC_P/authkey.png ibs=1 skip=$KEY_OFF_SET count=$KEY_LENGTH | base64`
 
 # auth2
-RESULT=$($AUTH_EXEC_P/auth2.sh $AUTH_TOKEN $PARTICAL_KEY)
+RESULT=$($AUTH_EXEC_P/auth2.sh $AUTH_TOKEN $PARTICAL_KEY $AUTH_EXEC_P)
 
 echo "$AUTH_TOKEN"

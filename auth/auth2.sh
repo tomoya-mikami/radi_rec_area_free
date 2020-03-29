@@ -2,8 +2,9 @@
 
 # $1 auth token
 # $2 partialkey
+# $3 exec path
 
-curl -b /home/paseri-vol/develop/radiko/auth/cookie.txt 'https://radiko.jp/v2/api/auth2_fms' \
+curl -b $3/cookie.txt 'https://radiko.jp/v2/api/auth2_fms' \
 	-XPOST \
 	-H 'Content-Type: application/x-www-form-urlencoded' \
 	-H 'Referer: http://radiko.jp/' \

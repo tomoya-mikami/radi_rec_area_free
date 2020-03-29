@@ -39,3 +39,5 @@
 ## 参考にさせて頂いたサイト
 
 - http://takaxyz.com/index.php/2018/10/17/post-526/
+- https://www.norikistudio.com/station-id-list
+

@@ -14,6 +14,9 @@ export RADIKO_LOGIN_ID=$1
 export RADIKO_LOGIN_PASS=$2
 export RADIKO_SAVE_PATH=$3
 
+# mkdir if target dir not exists
+mkdir -p "$RADIKO_SAVE_PATH"
+
 # set target date
 TARGET_DATE=$($BIN_P/target-date/get-date.sh $6)
 FROM="${TARGET_DATE}${7}"

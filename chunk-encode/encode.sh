@@ -3,9 +3,6 @@
 # $1 radio chunklist path
 # $2 auth token
 
-echo $1
-echo $2
-
 ffmpeg \
 	-content_type 'application/x-www-form-urlencoded' \
 	-headers 'Referer: http://radiko.jp/' \
